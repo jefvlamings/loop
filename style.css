@@ -1,0 +1,257 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*:focus {
+      outline: none;   /* sexy hot pink */
+}
+body {
+  width: 300px;
+  text-align: center;
+  font-family: helvetica;
+  background: #272728; 
+}
+
+#add{
+  background: #46e3FF;
+  border: none;
+  padding: 12px;
+}
+#add a{
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: #008BA3 0px 1px 1px;  
+}
+
+#controls {
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+}
+#previous{
+  float: left;
+  margin-left: 30px;
+  height: 40px;
+  width: 41px;
+  background: url("images/controls.png");
+  background-position: 0px -50px;
+}
+#previous:hover{
+  background: url("images/controls.png");
+  background-position: 0px 0px;
+  cursor: pointer;
+}
+#previous:active{
+  background: url("images/controls.png");
+  background-position: 0px -100px;
+}
+#play{
+  float: left;
+  margin-left: 42px;  
+  height: 40px;
+  width: 37px;
+  background: url("images/controls.png");
+  background-position: -50px -50px;
+}
+#play:hover{
+  background: url("images/controls.png");
+  background-position: -50px 0px;
+  cursor: pointer;
+}
+#play:active{
+  background: url("images/controls.png");
+  background-position: -50px -100px;
+}
+#pause{
+  float: left;
+  margin-left: 42px;  
+  height: 40px;
+  width: 37px;
+  background: url("images/controls.png");
+  background-position: -100px -50px;
+}
+#pause:hover{
+  background: url("images/controls.png");
+  background-position: -100px 0px;
+  cursor: pointer;
+}
+#pause:active{
+  background: url("images/controls.png");
+  background-position: -100px -100px;
+}
+#next{
+  float:left;
+  margin-left: 40px;  
+  height: 40px;
+  width: 41px;
+  background: url("images/controls.png");
+  background-position: -150px -50px;
+}
+#next:hover{
+  background: url("images/controls.png");
+  background-position: -150px 0px;
+  cursor: pointer;
+}
+#next:active{
+  background: url("images/controls.png");
+  background-position: -150px -100px;
+}
+
+
+#playlist{
+  clear: both;
+  border-bottom: 1px solid #383839;
+}
+#playlist ol{
+  text-align: left;
+  font-size: 12px;
+  color: #fff;  
+  list-style-position:inside;
+}
+#playlist ol li {
+  border-top: 1px solid #383839;
+
+}
+
+#playlist ol li:hover #remove {
+  background: url('images/remove.png') no-repeat center center;
+}
+
+#title {
+  padding-left: 14px;  
+  padding-top: 14px;  
+  padding-bottom: 14px;    
+}
+
+#title a {
+  font-weight: bold;  
+  text-shadow: #141414 0px 1px 1px;  
+  text-decoration: none;
+  color: #98A0A9; 
+  padding-left: 10px;
+}
+
+#even:hover {
+  background: #000;
+  cursor: pointer;
+  color: #fff;
+}
+#even:hover a {
+  color: #fff;
+}
+
+
+#uneven {
+  background: #1E1E1F;
+}
+#uneven:hover {
+  background: #000;
+  cursor: pointer;
+  color: #fff;
+}
+#uneven:hover a {
+  color: #fff;
+}
+
+
+#playing{
+  background: #ff3900;
+  color: #fff;
+  border-top: 1px solid #FF6F47;
+  text-shadow: #8F1F00 0px 1px 1px;    
+}
+#playing:hover {
+  cursor: pointer;
+}
+#playing a{
+  color: #fff;
+}
+#playing:hover #remove{
+  background: url('images/remove.png') no-repeat center center;
+}
+
+#remove{
+  float: right;  
+  overflow: hidden;
+  width: 40px;
+  height: 40px;  
+}
+
+
+#tutorial{
+  color: #fff;
+  text-shadow: #8F1F00 0px 1px 1px;  
+  padding: 20px;
+}
+#tutorial h1{
+  font-size: 28px;  
+  font-weight: bold;  
+  color: #fff;
+  text-shadow: #8F1F00 0px 1px 1px;  
+  margin-bottom: 20px;  
+}
+#tutorial h2{
+  text-shadow: #141414 0px 1px 1px;  
+  text-decoration: none;
+  color: #98A0A9; 
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+#tutorial ol{
+  margin-left: 20px;
+  text-align: left;
+  color: #98A0A9; 
+  text-shadow: #141414 0px 1px 1px;  
+  font-size: 14px;
+}
+#tutorial li{
+  padding: 5px;
+}
+#tutorial li a{
+  color: #fff;
+  text-decoration: none;
+}
